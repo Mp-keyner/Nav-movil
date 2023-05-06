@@ -22,7 +22,8 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: calc(100vh - 80px);
+	/* height: calc(100vh - 80px); */
+    height: 100vh;
 }
 
 .hero h1 {
@@ -78,7 +79,7 @@ nav .indicador {
 	width: 90%;
 	margin: auto;
 
-	padding-top: 120px;
+	padding-top: 12px;   /*12px*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;

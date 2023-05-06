@@ -1,7 +1,11 @@
 const menu = document.getElementById('menu');
 const indicador = document.getElementById('indicador');
 const home = document.getElementById('home');
-const secciones = document.querySelectorAll('.seccion');
+const Projects = document.getElementById('Projects');
+const About = document.getElementById('About');
+const Portafolio = document.getElementById('Portafolio');
+const Contact = document.getElementById('Contact');
+const secciones = document.querySelectorAll('.Contact');
 
 let tamañoIndicador = menu.querySelector('a').offsetWidth;
 indicador.style.width = tamañoIndicador + 'px';
@@ -47,5 +51,18 @@ window.addEventListener('resize', onResize);
 
 home.addEventListener('click', () =>{
     menu.style = 'top: 0;'
+})
+
+Projects.addEventListener('click', () =>{
+    menu.style = 'top: 619px;'
+})
+About.addEventListener('click', () =>{
+    menu.style = 'top: 619px;'
+})
+Portafolio.addEventListener('click', () =>{
+    menu.style = 'top: 619px;'
+})
+Contact.addEventListener('click', () =>{
+    menu.style = 'top: 619px;'
 })
 
