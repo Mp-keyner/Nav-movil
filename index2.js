@@ -1,5 +1,6 @@
 const menu = document.getElementById('menu');
 const indicador = document.getElementById('indicador');
+const home = document.getElementById('home');
 const secciones = document.querySelectorAll('.seccion');
 
 let tamañoIndicador = menu.querySelector('a').offsetWidth;
@@ -43,3 +44,8 @@ const onResize = () => {
 }
 
 window.addEventListener('resize', onResize);
+
+home.addEventListener('click', () =>{
+    menu.style = 'top: 0;'
+})
+
