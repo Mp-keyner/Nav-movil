@@ -23,7 +23,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	/* height: calc(100vh - 80px); */
-    height: 100vh;
+    height: 88vh;
 }
 
 .hero h1 {
@@ -60,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-	background: #f0f0f0;
+	background: #a3a2a2;
 }
 
 nav .indicador {
@@ -70,7 +70,7 @@ nav .indicador {
 	position: absolute;
 	bottom: 0;
 	transition: .3s ease-out all;
-	/* transform: translate(-500px); */
+	transform: translate(-500px);
 }
 
 .seccion {
@@ -112,6 +112,47 @@ nav .indicador {
 	vertical-align: top;
 	margin-bottom: 20px;
 }
+
+.seccio {
+	min-height: 100vh;
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+
+	padding-top: 12px;   /*12px*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.seccio .card {
+	background: #fff;
+	height: 90%;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccio h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.seccio p {
+	line-height: 38px;
+	margin-bottom: 40px;
+	color: #494949;
+	font-size: 20px;
+}
+
+.seccio img {
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
 .nav__icon{
     font-size: 25px;
 }
@@ -148,22 +189,38 @@ nav .indicador {
 }
 @media screen and (max-width:768px) {
     nav {
-        position: fixed;
-    top: 619px;
-    background: #333;
-    /* bottom: -69px; */
-    /* left: 51px; */
-    border-color: #FFF;
-    width: 100%;
-    height: 3rem;
-    /* padding: 0 3rem; */
-    /* display: grid; */
-    align-content: center;
-    border-radius: 1.25rem 1.25rem 0 0;
-    transition: .4s;
-    box-shadow: 0 -1px 12px rgb(59, 59, 59, 0.25);
+		position: fixed;
+		top: 601px;
+		/* background: #333; */
+		/* bottom: -69px; */
+		/* left: 51px; */
+		border-color: #FFF;
+		width: 100%;
+		height: 4rem;
+		/* padding: 0 3rem; */
+		/* display: grid; */
+		align-content: center;
+		border-radius: 1.25rem 1.25rem 0 0;
+		transition: .4s;
+		box-shadow: 0 -1px 12px rgb(59, 59, 59);
     }
     .indicador{
         display: none;
     }
+	.hero{
+		height: 100vh;
+	}
+}
+
+
+.como{
+	/* background-color: #333; */
+	top: 0;
+	border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.cama{
+	/* background-color: white; */
+	top: 601px;
+	border-radius: 1.25rem 1.25rem 0 0;
 }

@@ -1,11 +1,6 @@
 const menu = document.getElementById('menu');
 const indicador = document.getElementById('indicador');
-const home = document.getElementById('home');
-const Projects = document.getElementById('Projects');
-const About = document.getElementById('About');
-const Portafolio = document.getElementById('Portafolio');
-const Contact = document.getElementById('Contact');
-const secciones = document.querySelectorAll('.Contact');
+const secciones = document.querySelectorAll('.seccion');
 
 let tamañoIndicador = menu.querySelector('a').offsetWidth;
 indicador.style.width = tamañoIndicador + 'px';
@@ -49,20 +44,39 @@ const onResize = () => {
 
 window.addEventListener('resize', onResize);
 
-home.addEventListener('click', () =>{
-    menu.style = 'top: 0;'
-})
 
-Projects.addEventListener('click', () =>{
-    menu.style = 'top: 619px;'
-})
-About.addEventListener('click', () =>{
-    menu.style = 'top: 619px;'
-})
-Portafolio.addEventListener('click', () =>{
-    menu.style = 'top: 619px;'
-})
-Contact.addEventListener('click', () =>{
-    menu.style = 'top: 619px;'
-})
+// ----------------------------------------------------------------
+
+let Home = document.getElementById('home');
+let Portafolio = document.getElementById('Portafolio');
+let About = document.getElementById('About');
+let Contact = document.getElementById('Contact');
+let Projects = document.getElementById('Projects');
+
+const mostrar = () => {
+	if (window.innerWidth < 400){
+		menu.classList.remove('como')
+		menu.classList.add('cama')
+	}else{
+		menu.classList.remove('como')
+		menu.classList.remove('cama')
+	}
+}
+
+const imprimir = () => {
+	if (window.innerWidth < 400){
+		menu.classList.remove('cama')
+		menu.classList.add('como')
+	}else{
+		menu.classList.remove('como')
+		menu.classList.remove('cama')
+	}
+}
+
+Home.addEventListener('click', () => imprimir());
+Portafolio.addEventListener('click', () => mostrar());
+About.addEventListener('click', () => mostrar());
+Contact.addEventListener('click', () => mostrar());
+Projects.addEventListener('click', () => mostrar());
+
 
